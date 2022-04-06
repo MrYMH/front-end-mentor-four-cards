@@ -1,0 +1,81 @@
+body{
+    Font-size: 15px;
+    font-family: sans-serif;
+}
+.container{
+    background-color: hsl(0, 0%, 98%);
+    padding: 20px;
+    width: 1000px;
+    height: 530px;
+    margin-left: 150px;
+    z-index: 1;
+    margin: 20px ,auto;
+}
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    ". team ."
+    "super team gal"
+    "super karma gal"
+    ". karma .";
+    column-gap: 20px;
+    row-gap: 20px;
+    padding: 20px;
+    margin: 20px ,auto;
+}
+.supervisor{
+    grid-area: super;
+    border-top: 2px solid hsl(180, 62%, 55%);
+}
+.Calculator{
+    grid-area: gal;
+    border-top: 2px solid hsl(212, 86%, 64%);
+}
+.Karma{
+    grid-area: karma;
+    border-top: 2px solid hsl(34, 97%, 64%);
+}
+.Team-Builder{
+    grid-area: team;
+    border-top: 2px solid hsl(0, 78%, 62%);
+}
+section div{
+    background-color:white ;
+    box-shadow: 1px 1px 13px #a99797;
+    padding-left: 15px;
+}
+section div p{
+    color: hsl(0, 6%, 69%);
+}
+header{
+    text-align: center;
+}
+header p{
+    color: hsl(0, 6%, 69%);
+}
+/* header .pra1{
+    font-size: 20px;
+} */
+@media (max-width: 1440px) and (min-width: 376px){
+    
+}
+@media (max-width: 375px){
+    .container{
+        max-height: 900px;
+        max-width: 370px;
+        
+    }
+    section{
+        display:inline-block;
+    }
+    section div,
+    .head{
+        max-width: 70%;
+        max-height: calc((70% / 5) - 8px);
+        margin-top:calc((30% / 6) - 8px);
+    }
+    
+}
+
